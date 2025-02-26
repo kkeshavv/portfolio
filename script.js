@@ -64,6 +64,10 @@ window.onclick = (event) => {
 };
 
 
+document.getElementById("view-more-btn").addEventListener("click", function() {
+    var moreProjects = document.querySelector(".more-projects");
+    moreProjects.style.display = moreProjects.style.display === "none" ? "grid" : "none";
+});
 
 
 

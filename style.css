@@ -378,26 +378,39 @@ span{
     transform: scale(1.03);
 }
 .service-box .service-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+    .service-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-height: 200px;
+        justify-content: left;
+        align-items: baseline;
+        padding: 5rem 5rem;
+        margin: 0 !important; /* Added this to remove margin */
+        padding: 0 !important; /* Added this to remove padding */
+        text-align: center; /* Centers the text inside */
+    }
+    
 }
-.service-info h4{
-    font-size: 3rem;
+.service-info h4 {
+    font-size: 2rem;
     font-weight: 800;
     line-height: 2;
 }
-.service-info p{
+
+
+
+
+
+.service-info p {
     font-size: 1.6rem;
     font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7 ;
+    max-height: 100px;  /* Adjust or remove if you expect longer descriptions */
+    line-height: 1.7;
     margin: auto;
+    overflow-wrap: break-word; /* Ensures long words/text wrap within the container */
 }
+
 
 .contact{
     background-color: var(--bg-color);
@@ -632,23 +645,35 @@ span{
 html {
     scroll-behavior: smooth;
 }
+
+
+
 .card {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Adjust max-width as needed */
+    max-width: 400px;  /* Width of the circular container */
+    height: 400px;      /* Ensure it forms a circle */
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 50%; /* Make the card circular */
+    border-radius: 50%; /* Makes it circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
-  }
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
   
   .card-img {
     display: block;
     width: 100%;
-    height: auto;
-    border-radius: 50%; /* Make the image circular */
-  }
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circular frame without distortion */
+    border-radius: 50%;
+}
+
+
+ 
+ 
+
   
   .card:hover {
     box-shadow: 0 0 25px rgba(255, 235, 205, 0.7), 
@@ -656,3 +681,19 @@ html {
                 0 0 100px rgba(255, 235, 205, 0.7); /* Cream color box-shadow on hover */
   }
   
+
+
+
+  /* Custom style for the "Click Me" button */
+.custom-btn {
+    background: #333;;;;
+    color: white;
+    border: 2px solid black;
+}
+
+/* Hover effect for the custom button */
+.custom-btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
