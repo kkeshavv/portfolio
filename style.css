@@ -1,3 +1,8 @@
+.description {
+    font-family: 'Bitter', serif !important;
+    font-size: xx-large !important;  
+}
+
 * {
     margin: 0;
     padding:0;
@@ -180,7 +185,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Enginerring student";
+    content: "Enginerring student"; 
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -202,23 +207,23 @@ span{
     @keyframes words{
         0%,
         20%{
-            content: " CSE Student";
+            content: " Tech Explorer";
         }
         21%,
         40%{
-            content: " CSE Student";
+            content: " AI Practitioner";
         }
         41%,
         60%{
-            content: " CSE Student";
+            content: " Lifelong Learner";
         }
         61%,
         80%{
-            content: " CSE Student";
+            content: " Critical Thinker";
         }
         81%,
         100%{
-            content: " CSE Student";
+            content: " Sci-Fi Fanatic";
         }
     }
 
