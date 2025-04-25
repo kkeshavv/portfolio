@@ -1,7 +1,3 @@
-.description {
-    font-family: 'Bitter', serif !important;
-    font-size: xx-large !important;  
-}
 
 * {
     margin: 0;
@@ -265,6 +261,52 @@ span{
 .education h2{
     margin-bottom: 5rem;
 }
+
+
+.skills{
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+    
+}
+.skills h2{
+    margin-bottom: 5rem;
+}
+
+.skills{
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.skills:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* ← this adds gap between icons */
+    padding: 20px;
+    color: white;
+}
+
+
+.skills-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+
 .timeline-items{
     max-width: 1200px;
     margin: auto;
